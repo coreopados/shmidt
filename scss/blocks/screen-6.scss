@@ -1,0 +1,226 @@
+.screen-6 {
+    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 90px;
+
+    h2 {
+        margin-bottom: 50px;
+    }
+
+    .suggest {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-around;
+
+        &__block:nth-of-type(2) {
+            border-left: 1px solid #c39c6c;
+            border-right: 1px solid #c39c6c;
+        }
+
+        &__block {
+            max-width: calc(100%/3);
+            width: 100%;
+            padding-top: 40px;
+
+            &__img {
+                max-height: 385px;
+                //                height: 100%;
+                text-align: center;
+                max-width: 450px;
+                margin: 0 auto;
+                padding: 0 30px;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            &__number {
+                text-align: center;
+                margin-top: 30px;
+                margin-bottom: 10px;
+                font-family: 'Forum', cursive;
+                color: #c39c6c;
+                font-size: 24px;
+                letter-spacing: 2px;
+            }
+
+            &__name {
+                font-size: 27px;
+                letter-spacing: 2px;
+
+                span {
+                    letter-spacing: 2px;
+                }
+            }
+
+            &__list {
+                padding-left: 70px;
+                max-width: 450px;
+                margin: 0 auto;
+                //                padding: 0 30px;
+
+                li {
+                    font-family: 'Montserrat', sans-serif;
+                    list-style: disc;
+                    letter-spacing: 2px;
+                    font-size: 17px;
+
+                    p {
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 500;
+                        margin-top: 20px;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.screen-6:before {
+    content: '';
+    height: 1px;
+    width: calc(40vw);
+    background: $brown;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: -1;
+}
+
+.screen-6:after {
+    content: '';
+    height: 1px;
+    width: calc(40vw);
+    background: $brown;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    z-index: -1;
+}
+
+
+@media screen and (max-width: 1540px) {
+    .screen-6:before {
+        width: 35vw;
+    }
+
+    .screen-6:after {
+        width: 35vw;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .screen-6 .suggest__block__list {
+        padding-left: 50px;
+        padding-right: 20px;
+    }
+
+    .screen-6 .suggest__block__list li,
+    .screen-6 .suggest__block__list li p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .screen-6:before {
+        width: 30vw;
+    }
+
+    .screen-6:after {
+        width: 30vw;
+    }
+
+
+    .screen-6 h2 {
+        margin-bottom: 0;
+    }
+
+    .screen-6 .suggest {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .screen-6 .suggest__block {
+        margin-bottom: 30px;
+    }
+
+    .screen-6 .suggest__block:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .screen-6 .suggest__block {
+        max-width: 380px;
+    }
+
+    .screen-6 .suggest__block:nth-of-type(2) {
+        border: 0;
+    }
+
+    .screen-6 .suggest__block__list {
+        padding-left: 45px;
+    }
+
+    .screen-6 .suggest__block__list li p {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .screen-6:before {
+        width: 25vw;
+    }
+
+    .screen-6:after {
+        width: 25vw;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .screen-6:before {
+        width: 10vw;
+    }
+
+
+
+    .screen-6:after {
+        width: 10vw;
+    }
+
+
+    .screen-6 .suggest__block__img {
+        padding: 0;
+    }
+
+    .screen-6 .suggest__block__list {
+        padding-right: 0;
+        padding-left: 30px;
+    }
+
+    .screen-6 .suggest__block__list li p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .screen-6 {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .screen-6:before {
+        width: 5vw;
+    }
+
+    .screen-6:after {
+        width: 5vw;
+    }
+}

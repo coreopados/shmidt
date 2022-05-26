@@ -1,0 +1,161 @@
+.screen-5 {
+    position: relative;
+    padding: 90px 0;
+
+    .screen-bg-6 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+    }
+
+    .screen-bg-6-tablet,
+    .screen-bg-6-mob {
+        display: none;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        position: relative;
+
+    }
+
+    h2:after {
+        content: '';
+        display: inline-block;
+        height: 65px;
+        width: 1px;
+        position: absolute;
+        left: 50%;
+        top: -100px;
+        background: #55442f;
+    }
+
+    .steps {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .step {
+            max-width: 470px;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 25px;
+
+            .number {
+                display: inline-block;
+                width: 68px;
+                height: 68px;
+                line-height: 68px;
+                border-radius: 50%;
+                background: #fff;
+                font-size: 34px;
+                font-family: 'Forum', cursive;
+                color: #55442f;
+                font-weight: 400;
+                border: 1px solid #55442f;
+            }
+
+            p {
+                margin-top: 0;
+                font-size: 16px;
+            }
+        }
+
+        .step:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1535px) {
+    .screen-5 .screen-bg-6 {
+        display: none;
+    }
+
+    .screen-5 .screen-bg-6-tablet {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 1065px) {
+    .screen-5 .screen-bg-6-tablet {
+        //        display: none;
+    }
+
+    //    .screen-5 .screen-bg-6-mob {
+    //        display: block;
+    //        position: absolute;
+    //        top: 0;
+    //        left: 0;
+    //        z-index: -1;
+    //        height: 100%;
+    //        width: 100%;
+    //    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .screen-5 .screen-bg-6-tablet {
+        display: none;
+    }
+
+    .screen-5 .screen-bg-6-mob {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .screen-5 .steps .step .number {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .screen-5 h2 span {
+        font-size: 24px;
+    }
+
+    .screen-5 .steps .step .number {
+        font-size: 24px;
+    }
+
+    .screen-5 h6 span {
+        font-size: 18px;
+    }
+
+    .screen-5 {
+        padding: 40px 0;
+    }
+
+    .screen-5 h2:after {
+        top: -70px;
+    }
+
+    .screen-5 h2 {
+        margin-bottom: 20px;
+    }
+}

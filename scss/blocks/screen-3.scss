@@ -1,0 +1,362 @@
+.screen-3 {
+    position: relative;
+    background-size: cover;
+    min-height: 615px;
+
+    .screen-3-bg {
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: 0;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    .screen-3-bg-tablet,
+    .screen-3-bg-mob {
+        display: none;
+    }
+
+    h3:not(.name) {
+        text-align: left;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 120px;
+        letter-spacing: 2px;
+    }
+
+    h3:not(.name):before {
+        content: '';
+        height: 125px;
+        width: 1px;
+        position: absolute;
+        left: -20px;
+        background: $brown;
+        top: -70px;
+    }
+
+    .command-wrap {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .person {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            max-width: 50%;
+            width: 100%;
+
+            .description {
+                margin-right: 35px;
+                max-width: 325px;
+                margin-top: 160px;
+
+                .name {
+                    position: relative;
+                    margin-bottom: 20px;
+                    text-align: left;
+                    font-size: 29px;
+                }
+
+                .name:after {
+                    content: '';
+                    width: 35px;
+                    bottom: -20px;
+                    height: 1px;
+                    background: #c6c6c6;
+                    display: inline-block;
+                    position: absolute;
+                    left: 0;
+                    letter-spacing: 2px;
+
+                }
+
+                .post {
+                    margin-top: 40px;
+                    font-size: 16px;
+                    font-family: 'Museo Sans Cyrl 500';
+                    letter-spacing: 2px;
+
+                }
+
+                .about-person {
+                    font-family: 'MuseoSansCyrl-300';
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .person:nth-child(even) {
+            flex-direction: row-reverse;
+
+            .description {
+                margin-left: 35px;
+                margin-top: 235px;
+                margin-right: 0;
+            }
+        }
+
+        .person.emma {
+            margin-right: 20px;
+
+            .photo {
+                margin-top: 70px;
+                max-width: 350px;
+                position: relative;
+                z-index: 1;
+            }
+
+            .photo:before {
+                content: '';
+                height: 150px;
+                width: 1px;
+                background: #55442f;
+                position: absolute;
+                -webkit-transform: rotate(-30deg);
+                -ms-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+                position: absolute;
+                left: -60px;
+                top: -20px;
+            }
+
+            .photo:after {
+                position: absolute;
+                content: '';
+                height: 150px;
+                width: 1px;
+                background: #55442f;
+                position: absolute;
+                -webkit-transform: rotate(-30deg);
+                -ms-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+                bottom: -105px;
+                left: 160px;
+            }
+        }
+
+        .person.viktor {
+            margin-left: 20px;
+
+            .photo {
+                margin-top: 195px;
+                max-width: 412px;
+                position: relative;
+            }
+
+            .photo:before {
+                content: '';
+                height: 150px;
+                width: 1px;
+                background: #55442f;
+                position: absolute;
+                -webkit-transform: rotate(30deg);
+                -ms-transform: rotate(30deg);
+                transform: rotate(30deg);
+                position: absolute;
+                left: 120px;
+                top: -160px;
+            }
+
+            .photo:after {
+                content: '';
+                height: 150px;
+                width: 1px;
+                background: #55442f;
+                position: absolute;
+                -webkit-transform: rotate(30deg);
+                -ms-transform: rotate(30deg);
+                transform: rotate(30deg);
+                bottom: 0px;
+                left: -60px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1850px) {
+    .screen-3 {
+        padding-top: 130px;
+        padding-bottom: 100px;
+    }
+
+    .screen-3 .command-wrap .person.emma .photo img {
+        min-width: 355px;
+    }
+
+    .screen-3 .command-wrap .person.viktor .photo img {
+        min-width: 395px;
+    }
+
+    .screen-3 .command-wrap .person .description {
+        margin-top: 75px;
+    }
+
+    .screen-3 .command-wrap .person:nth-child(even) .description {
+        margin-top: 90px;
+    }
+}
+
+@media screen and (max-width: 1380px) {
+    .screen-3 .screen-3-bg {
+        display: none;
+    }
+
+    .screen-3 .screen-3-bg-tablet {
+        display: block;
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top: 0;
+    }
+
+    .screen-3 .command-wrap {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .screen-3 .command-wrap .person.viktor {
+        margin-left: 0;
+    }
+
+    .screen-3 .command-wrap .person.emma {
+        margin-right: 0;
+    }
+
+    .screen-3 .command-wrap .person.emma .photo:after {
+        bottom: -148px;
+    }
+
+    .screen-3 {
+        padding-top: 150px;
+    }
+
+    .screen-3 .command-wrap .person {
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .screen-3 .command-wrap .person .description {
+        margin-top: 130px;
+    }
+
+    .screen-3 .command-wrap .person:nth-child(even) .description {
+        margin-top: 200px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .screen-3 .command-wrap .person.emma .photo {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .screen-3 .command-wrap .person.emma .photo img {
+        min-width: 280px
+    }
+
+    .screen-3 .command-wrap .person:nth-child(even),
+    .screen-3 .command-wrap .person {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .screen-3 .command-wrap .person .description {
+        margin-top: 100px;
+    }
+
+    .screen-3 .command-wrap .person:nth-child(even) .description {
+        margin-top: 40px;
+    }
+
+    .screen-3 .command-wrap .person:nth-child(even) .description {
+        margin-left: 0;
+    }
+
+    .screen-3 {
+        padding-bottom: 70px;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .screen-3 {
+        padding-bottom: 50px;
+    }
+
+    .screen-3-bg-tablet {
+        display: none;
+    }
+
+    .screen-3-bg-mob {
+        display: block;
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top: 0;
+    }
+
+    .screen-3 .command-wrap .person.viktor .photo img,
+    .screen-3 .command-wrap .person.emma .photo img {
+        min-width: unset;
+    }
+
+    .screen-3 .command-wrap .person.emma .photo img {
+        max-width: 287px;
+    }
+
+    .screen-3 .command-wrap .person.emma .photo:after {
+        left: 120px;
+    }
+
+    .screen-3 .command-wrap .person.viktor .photo:before {
+        left: 100px;
+    }
+
+    .screen-3 .command-wrap .person.viktor .photo img {
+        max-width: 348px;
+    }
+
+    .screen-3 .command-wrap .person.viktor .photo {
+        margin-top: 100px;
+    }
+
+    .screen-3 .command-wrap .person.viktor .photo:before {
+        top: -100px;
+        left: 75px;
+        height: 90px;
+    }
+
+    .screen-3 .command-wrap .person.viktor .photo:before {
+        left: 55px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .screen-3 {
+        padding-top: 110px;
+    }
+
+    .screen-3 h3:not(.name) {
+        top: 90px;
+    }
+
+    .screen-3 .command-wrap .person.viktor .photo img {
+        max-width: 280px;
+    }
+}

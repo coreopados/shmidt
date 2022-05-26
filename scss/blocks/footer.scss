@@ -1,0 +1,276 @@
+footer {
+
+    background: #000;
+    z-index: 2;
+    position: relative;
+
+    .foot-wrap {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        height: 210px;
+
+        .foot-block {
+            max-width: calc(100%/3);
+            width: 100%;
+        }
+
+        .left-part {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+
+            .wrap-foot-menu {
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: -o-flex;
+                display: flex;
+                width: 100%;
+
+                .logo-foot {
+                    margin-right: 80px;
+                }
+
+                .menu-foot {
+                    display: -webkit-flex;
+                    display: -moz-flex;
+                    display: -ms-flex;
+                    display: -o-flex;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    max-width: 450px;
+                    width: 100%;
+
+                    li {
+                        a {
+                            font-size: 20px;
+                            color: #fff;
+                            font-family: 'MuseoSansCyrl-300';
+                            position: relative;
+                        }
+
+                        a:after {
+                            content: '';
+                            width: 0px;
+                            height: 1px;
+                            background: #fff;
+                            position: absolute;
+                            bottom: -10px;
+                            transition: 0.3s;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+
+                        a:hover:after {
+                            width: 65px;
+                            transition: 0.3s;
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+        .center-part {
+            .foot-soc-links {
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: -o-flex;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                max-width: 448px;
+                margin: 0 auto;
+                width: 100%;
+
+                li {
+                    a {
+
+                        margin-right: 15px;
+
+                        img {
+                            transition: 0.3s;
+                            max-height: 30px
+                        }
+                    }
+
+                    a:hover {
+
+
+                        img {
+                            transform: scale(1.1);
+                            transition: 0.3s;
+                        }
+                    }
+                }
+
+                li:last-of-type a {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .right-part {
+            text-align: right;
+
+            .policy {
+                a {
+                    color: #fff;
+                    font-family: 'Museo Sans Cyrl 700';
+                    font-size: 24px;
+                    letter-spacing: 2px;
+                }
+            }
+
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 1640px) {
+    footer .foot-wrap {
+        min-height: 160px;
+        height: 100%;
+    }
+
+    footer .foot-wrap .left-part .wrap-foot-menu .logo-foot {
+        margin-right: 50px;
+    }
+
+    footer .foot-wrap .right-part .policy a {
+        font-size: 20px;
+    }
+
+    footer .foot-wrap .center-part .foot-soc-links li a {
+        max-width: 30px;
+        display: inline-block;
+    }
+
+    footer .foot-wrap .center-part,
+    footer .foot-wrap .right-part {
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    footer .foot-wrap .left-part .wrap-foot-menu .logo-foot {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    footer .foot-wrap .right-part .policy a,
+    footer .foot-wrap .left-part .wrap-foot-menu .menu-foot li a {
+        font-size: 18px;
+    }
+
+    footer .foot-wrap {
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    footer .foot-wrap .left-part .wrap-foot-menu .menu-foot {
+        display: none;
+    }
+
+    footer .foot-wrap .left-part .wrap-foot-menu {
+        justify-content: center;
+    }
+
+    footer .foot-wrap .left-part .wrap-foot-menu .logo-foot {
+        margin-right: 0;
+    }
+
+    footer .foot-wrap .center-part,
+    footer .foot-wrap .right-part {
+        padding-left: 0;
+    }
+
+    footer .foot-wrap .left-part .wrap-foot-menu .logo-foot {
+        margin-bottom: 15px;
+    }
+
+    footer .foot-wrap .foot-block {
+        max-width: 100%
+    }
+
+    footer .foot-wrap .right-part {
+        text-align: center;
+    }
+
+    footer .foot-wrap .center-part .foot-soc-links li:last-of-type {
+        display: none;
+    }
+
+    footer .foot-wrap .center-part .foot-soc-links {
+        margin-bottom: 20px;
+    }
+
+    footer .foot-wrap .right-part .policy a {
+        font-size: 24px;
+    }
+
+    footer .foot-wrap .center-part .foot-soc-links li a {
+        max-width: unset;
+    }
+
+    footer .foot-wrap .center-part .foot-soc-links li:last-of-type a {
+        margin-right: 0;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    footer .foot-wrap .center-part .foot-soc-links {
+        max-width: 380px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    footer .foot-wrap,
+    footer {
+        max-height: 290px;
+    }
+
+    footer .foot-wrap .left-part .wrap-foot-menu .logo-foot {
+        max-width: 60px;
+    }
+
+    footer .foot-wrap .center-part .foot-soc-links {
+        max-width: 340px;
+    }
+
+    footer .foot-wrap .center-part .foot-soc-links li a {
+        max-width: 36px;
+    }
+
+    footer .foot-wrap .right-part .policy a {
+        font-size: 21px;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    footer .foot-wrap .center-part .foot-soc-links li a {
+        max-width: 30px;
+    }
+
+    footer .foot-wrap .right-part .policy a {
+        font-size: 14px;
+    }
+}

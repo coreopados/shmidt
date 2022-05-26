@@ -1,0 +1,60 @@
+$brown: #55442f;
+
+
+.content-wrap {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+
+.swiper-button-next:after {
+    content: url(../../img/arrow.png);
+    z-index: 1;
+}
+
+.swiper-button-prev:after {
+    content: url(../../img/arrow.png);
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+.swiper-pagination.swiper-pagination-fraction {
+    z-index: -1;
+    padding-top: 20px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    top: 22px;
+}
+
+
+.btn {
+    margin-top: 40px;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    max-width: 235px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Forum', cursive;
+    font-size: 20px;
+    color: #fff;
+    background: #c39c6c;
+    height: 55px;
+    line-height: 55px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    position: relative;
+    letter-spacing: 2px;
+}
+
+.btn:hover {
+    transition: .3s;
+    -webkit-filter: brightness(1.1);
+    filter: brightness(1.1);
+}

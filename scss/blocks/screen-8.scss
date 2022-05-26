@@ -1,0 +1,226 @@
+.screen-8 {
+    padding-top: 90px;
+    background: url(../../img/screen-8/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 110px;
+    position: relative;
+    min-height: 830px;
+    background-size: cover;
+
+    .note {
+        position: absolute;
+        left: 50%;
+        top: 130px;
+
+        h2 {
+            color: #fff;
+            text-align: left;
+        }
+
+        p {
+            font-family: 'Montserrat', sans-serif;
+            color: #fff;
+            position: relative;
+            padding-left: 105px;
+        }
+
+        p:before {
+            content: '';
+            width: 95px;
+            height: 1px;
+            background: #fff;
+            display: inline-block;
+            position: absolute;
+            top: 9px;
+            left: 0;
+            margin-right: 10px;
+        }
+
+        .btn {
+            margin-left: 105px;
+        }
+    }
+
+    .advice {
+        position: absolute;
+        right: 100px;
+        bottom: 30px;
+        font-family: 'Corinthia';
+        font-size: 97px;
+        color: #fff;
+        font-weight: 400;
+    }
+
+    .image-1 {
+        position: relative;
+        top: -150px;
+    }
+
+    .image-2 {
+        position: relative;
+        top: -300px;
+        left: -40px;
+    }
+
+    .image-3 {
+        position: relative;
+        top: -30px;
+        left: -210px;
+    }
+
+
+}
+
+@media screen and (max-width: 1380px) {
+    .screen-8 .note {
+        top: 190px;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 60%;
+    }
+
+    .screen-8 .image-1 {
+        //        top: -265px;
+        max-width: 200px;
+    }
+
+    .screen-8 .note p:before {
+        left: 100px;
+    }
+
+    .screen-8 .image-2 {
+        max-width: 90px;
+        left: -20px;
+        top: -230px;
+    }
+
+    .screen-8 .image-3 {
+        max-width: 120px;
+        top: -125px;
+        left: -95px;
+    }
+
+    .screen-8 .advice {
+        right: 75px;
+    }
+
+    .screen-8 .note .btn {
+        margin: 40px auto 10px;
+    }
+}
+
+@media screen and(max-width:1200px) {
+    .screen-8 .note p:before {
+        left: 50px;
+    }
+
+}
+
+@media screen and(max-width: 1070px) {
+    .screen-8 .note p:before {
+        left: 0px;
+    }
+}
+
+@media screen and(max-width: 991px) {
+    .screen-8 .note {
+
+
+        h2 {
+            text-align: center;
+        }
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .screen-8 .note {
+        width: 100%;
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        h2 {
+            text-align: left;
+            padding-left: 0;
+        }
+
+        p {
+            margin-top: 15px;
+        }
+
+        .btn {
+            margin-left: 105px;
+            margin-top: 25px;
+        }
+    }
+
+    .screen-8 {
+        min-height: 680px;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .screen-8 {
+        background-position: -465px center;
+    }
+
+}
+
+@media screen and (max-width: 576px) {}
+
+@media screen and (max-width: 432px) {
+    .screen-8 .image-3 {
+        max-width: 120px;
+        top: -245px;
+        left: 200px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .screen-8 .note .btn {
+        margin: 25px auto 10px;
+        display: block;
+    }
+
+    .screen-8 .advice {
+        right: 10px;
+    }
+
+    .screen-8 {
+        .note h2 {
+            line-height: .5;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 380px) {
+    .screen-8 {
+        min-height: 580px;
+    }
+
+    .screen-8 .note p {
+        padding-left: 60px;
+    }
+
+    .screen-8 .note p:before {
+        width: 50px;
+    }
+
+    .screen-8 .note .btn {
+        height: 50px;
+        line-height: 50px;
+    }
+
+
+}
+
+@media screen and (max-width: 342px) {
+    .screen-8 .note {
+        top: 160px;
+    }
+}
